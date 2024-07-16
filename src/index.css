@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
+}
+
+.wrapper .buttons {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.wrapper .buttons div {
+  background-color: #dbdbdbdd;
+  border: 1px solid transparent;
+  padding: 5px 8px;
+  border-radius: 13px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.wrapper .buttons div:hover {
+  background-color: #cbcbcbf9;
+  transition: all 500ms ease;
+  border: 1px solid #000;
+}
+
+.full-item {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.full-item > div {
+  width: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 9px;
+}
+
+.full-item .full-item-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.full-item .full-item-image img {
+  height: 400px;
+  width: 50%;
+}
+
+.full-item-close {
+  top: 25px;
+  left: 90%;
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+main h4,
+.full-item h4,
+main p,
+.full-item p,
+main b,
+.full-item b {
+  margin: 10px 20px;
+  color: #333;
+}
+
+main b,
+.full-item b {
+  color: #5fa36a;
+}
+
+main .item_image {
+  width: 50%;
+  height: 250px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+main .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  transition: transform 500ms ease-in;
+}
+
+main .item img:hover,
+.full-item img:hover {
+  transform: scale(1.05);
+}
+
+main .item_text,
+.full-item-text {
+  width: 100%;
+  background-color: #ecebeddd;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+  overflow: scroll;
+  scrollbar-width: thin;
+}
+
+main .item_text h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main .item_text p {
+  font-size: 15px;
+}
+
+main .item_text b {
+  font-weight: 700;
+}
+
+main .add_to_cart,
+.full-item .full-item-text .add_to_cart {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background: #ca5252;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+}
+
+main .add_to_cart:hover,
+.full-item .full-item-text .add_to_cart:hover {
+  font-weight: 900;
+  transform: scale(1.1);
+  background: #dd3636;
+  transition: transform 200ms ease-in;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.navbar .navbar__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .navbar__links a {
+  font-weight: 600;
+  color: #000;
+}

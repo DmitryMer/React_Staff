@@ -1,0 +1,25 @@
+.add_to_basket {
+    width: 100%;
+}
+
+.add_to_basket img {
+    width: 80px;
+}
+
+.add_to_basket h4 {
+    width: 90px;
+    font-size: 14px;
+}
+
+.add_to_basket p {
+    font-size: 13px;
+    width: 50px;
+}
+
+.delete_icons {
+    cursor: pointer;
+}
+
+.delete_icons:hover {
+    color: #dc3d3d;
+}
